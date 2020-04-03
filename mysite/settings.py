@@ -16,12 +16,11 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '$uyy1+b7bl2tj@)47=p#xmh+btd^=huz17)5e@-qpou@h&166f'
+SECRET_KEY = 'f0-s+pjkyi^3lk^^q)9t^&jvwq=!7*rr6%+x%u_0ze7fx*0idc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -32,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'capstone',
+        'NAME': 'mysite',
         'USER': 'root',
         'PASSWORD': 'fjj926355',
         'HOST': '127.0.0.1',
@@ -110,13 +110,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Australia/NSW'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_L10N = False
+USE_L10N = True
 
-USE_TZ = False
+USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
