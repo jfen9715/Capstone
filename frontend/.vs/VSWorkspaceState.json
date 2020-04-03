@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\build",
+    "\\config",
+    "\\src",
+    "\\src\\assets",
+    "\\src\\assets\\css",
+    "\\src\\assets\\img",
+    "\\src\\assets\\js",
+    "\\src\\components",
+    "\\src\\router"
+  ],
+  "SelectedNode": "\\src\\components\\index.vue",
+  "PreviewInSolutionExplorer": false
+}
